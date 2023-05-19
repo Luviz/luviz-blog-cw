@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import './style.css'
 
 export type ButtonProps = {
   label: string;
