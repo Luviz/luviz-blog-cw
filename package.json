@@ -2,6 +2,15 @@
   "name": "@luviz/blog-cw",
   "version": "0.0.1",
   "description": "Component warehouse for applications used @Luviz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luviz/luviz-blog-cw.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Luviz/luviz-blog-cw/issues"
+  },
+  "homepage": "https://github.com/Luviz/luviz-blog-cw#readme",
   "scripts": {
     "rollup": "rollup -c"
   },
