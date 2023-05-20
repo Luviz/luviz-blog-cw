@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Meta,
-  StoryFn,
-} from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 import { Button } from "./button";
 
 export default {
@@ -10,16 +7,12 @@ export default {
   component: Button,
 } as Meta<typeof Button>;
 
-const Template: StoryFn<typeof Button> = (args) => (
-  <div style={{display: 'flex', justifyContent: 'center'}}>
-    <Button {...args} />
-  </div>
-);
+const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 
 export const MyMeh = Template.bind({});
 MyMeh.args = {
   label: "Meh!",
-  onClick: () => console.log("meh!")
+  onClick: () => console.log("meh!"),
 };
 
 export const ClickMe = Template.bind({});
