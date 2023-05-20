@@ -1,6 +1,6 @@
 {
   "name": "@luviz/blog-cw",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Component warehouse for applications used @Luviz",
   "repository": {
     "type": "git",
