@@ -12,3 +12,7 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      ## test 
+      - run: ls node_modules
+      - run: npm run rollup
+      - run: ls dist
