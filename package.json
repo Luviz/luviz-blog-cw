@@ -1,6 +1,6 @@
 {
   "name": "@luviz/blog-cw",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Component warehouse for applications used @Luviz",
   "repository": {
     "type": "git",
@@ -41,7 +41,6 @@
         "@semantic-release/git",
         {
           "assets": [
-            
             "docs",
             "package.json"
           ],
