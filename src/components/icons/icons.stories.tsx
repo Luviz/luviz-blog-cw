@@ -3,10 +3,10 @@ import { Meta, StoryFn } from "@storybook/react";
 import { GitHub } from "./github";
 import { LinkedIn } from "./linkedin";
 import { svgProps } from "./svg-props";
+import { Twitter } from "./twitter";
 
 export default {
   title: "Blog/Icons",
-  component: GitHub,
 } as Meta<typeof GitHub>;
 
 export const icons: StoryFn<svgProps> = (args) => {
@@ -14,6 +14,7 @@ export const icons: StoryFn<svgProps> = (args) => {
     <div style={{ display: "flex", gap: "0.5rem" }}>
       <GitHub {...args} />
       <LinkedIn {...args} />
+      <Twitter {...args} />
     </div>
   );
 };
@@ -32,3 +33,10 @@ export const linkedIn: StoryFn<svgProps> = (args) => (
   </div>
 );
 linkedIn.storyName = "LinkedIn";
+
+export const twitter: StoryFn<svgProps> = (args) => (
+  <div>
+    <Twitter {...args} />
+  </div>
+);
+twitter.storyName = "Twitter";
