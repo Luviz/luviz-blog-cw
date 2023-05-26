@@ -4,9 +4,11 @@ import { GitHub } from "./github";
 import { LinkedIn } from "./linkedin";
 import { svgProps } from "./svg-props";
 import { Twitter } from "./twitter";
+import { BlogIcon } from "./blog-icon";
 
 export default {
   title: "Blog/Icons",
+  component: BlogIcon
 } as Meta<typeof GitHub>;
 
 export const icons: StoryFn<svgProps> = (args) => {
@@ -15,10 +17,19 @@ export const icons: StoryFn<svgProps> = (args) => {
       <GitHub {...args} />
       <LinkedIn {...args} />
       <Twitter {...args} />
+      <BlogIcon {...args} />
     </div>
   );
 };
 icons.storyName = "Icons List";
+
+export const blogIcon: StoryFn<svgProps> = (args) => (
+  <div>
+    <BlogIcon {...args} />
+  </div>
+);
+blogIcon.storyName = "Blog Icon";
+
 
 export const github: StoryFn<svgProps> = (args) => (
   <div>
