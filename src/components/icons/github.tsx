@@ -1,7 +1,11 @@
 import React, { FC } from "react";
 import { svgProps } from "./svg-props";
 
-export const GitHub: FC<svgProps> = ({ width = "64px", height = "64px", fill="#000" }) => {
+export const GitHub: FC<svgProps> = ({
+  width = "64px",
+  height = "64px",
+  fill = "#000",
+}) => {
   return (
     <div>
       <svg
